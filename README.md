@@ -50,4 +50,4 @@ Ardından tarayıcıda `http://localhost:4173` adresini aç.
 
 ## İletişim
 
-Instagram: [@muhendis.elifcaliskaner](https://www.instagram.com/muhendis.elifcaliskaner/)
+Instagram: [@muh.elifcaliskaner](https://www.instagram.com/muh.elifcaliskaner/)
