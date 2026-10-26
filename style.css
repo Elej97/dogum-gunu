@@ -80,3 +80,13 @@ header{justify-content:flex-end;border-bottom:0;min-height:30px}.scene{padding-t
 /* Soft champagne stationery */
 .envelope-back{background:linear-gradient(135deg,#ba966b,#97744f)}.envelope-flap{background:linear-gradient(160deg,#e4c79d,#b68e61)}.envelope-front:before{background:linear-gradient(115deg,#d9b789 0%,#edcfaa 46%,#c49d6d 100%)}.envelope-front:after{background:linear-gradient(155deg,#f0d8b5 0%,#d9b78b 48%,#c8a16f 100%)}.envelope-front{border-bottom:1px solid #f4dfbb80;box-shadow:0 4px 18px #d7ac6420}.envelope-front span{color:#fff0d4;text-shadow:0 0 10px #fff0d455}
 @media(max-width:600px) and (min-height:620px){.gift:not(.is-blown){height:100svh;min-height:0;padding-top:12px;padding-bottom:10px}.gift:not(.is-blown) header{min-height:22px;padding-bottom:4px}.gift:not(.is-blown) .scene{display:flex;flex-direction:column;justify-content:center;padding-top:5px;padding-bottom:0;min-height:0}.gift:not(.is-blown) .intro h1{font-size:34px;margin:5px 0 10px}.gift:not(.is-blown) .intro .subtitle{font-size:10px;line-height:1.7}.gift:not(.is-blown) .cake-stage{width:min(100%,32svh);margin-top:20px}.gift:not(.is-blown) .step{font-size:25px;margin:10px 0 7px}.gift:not(.is-blown) .instructions{font-size:9px;margin-bottom:12px}.gift:not(.is-blown) .ritual .primary{padding:13px 20px}.gift:not(.is-blown) .status{margin-top:8px}.gift:not(.is-blown) footer{padding-top:8px}}
+/* A warmer, brighter birthday atmosphere. */
+body{background:radial-gradient(ellipse at 50% 42%,#604634 0%,#38291f 38%,#211b17 76%,#1a1613 100%)}
+.cake-photo{filter:brightness(1.04) saturate(.95)}.is-blown .cake-photo{filter:brightness(.85) saturate(.85)}
+.edit-button{display:inline-flex;align-items:center;gap:7px;color:#d6bea2}.edit-arrow{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.intro .subtitle{color:#d9c2a7}.instructions{color:#dbc5a9}.status{color:#bcaa97}footer{color:#a8927a}
+
+/* Deep plum backdrop, keeping the cake bright. */
+body{background:radial-gradient(ellipse at 50% 42%,#40304f 0%,#291d36 40%,#1a1325 76%,#130e1c 100%)}
+/* Dark wine and burgundy backdrop. */
+body{background:radial-gradient(ellipse at 50% 42%,#482331 0%,#301520 40%,#1e0d15 76%,#16090f 100%)}
