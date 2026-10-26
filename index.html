@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100e0d">
+  <meta name="description" content="Bir dilek, küçük bir pasta ve sadece sana ait bir mesaj.">
+  <title>Bir dilek tut ✷</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="starlight" id="starlight" aria-hidden="true"></div>
+  <main class="gift" id="gift">
+    <header><button class="edit-button" id="edit">Hediye hazırla ↗</button></header>
+    <section class="scene" aria-labelledby="heading">
+      <div class="intro"><h1 id="heading">Doğum günün<br>kutlu olsun<span id="name"></span></h1><p class="subtitle" id="subtitle">Bu pastayı senin için hazırladım.<br>İyi ki doğdun, iyi ki varsın. <span class="little-hearts" aria-label="kalpler">♡ ♡</span></p></div>
+      <div class="cake-stage">
+        <button class="cake-button" id="cake" aria-label="Mumları söndür">
+          <img class="cake-photo" src="cake.png" alt="Kirazlı, kremalı doğum günü pastası" width="1280" height="1280">
+          <span class="candle-light candle-one" aria-hidden="true"><i class="halo"></i><i class="fire"></i><i class="smoke-trail"></i></span>
+          <span class="candle-light candle-two" aria-hidden="true"><i class="halo"></i><i class="fire"></i><i class="smoke-trail"></i></span>
+          <span class="candle-light candle-three" aria-hidden="true"><i class="halo"></i><i class="fire"></i><i class="smoke-trail"></i></span>
+        </button>
+      </div>
+      <div class="ritual" id="ritual"><p class="step">Hazırsan ekrana üfle</p><p class="instructions"><span class="instruction-arrow" aria-hidden="true">↓</span> Butona dokun → mikrofon iznini ver → ekrana üfle</p><button class="primary" id="blow"><span>Mumları üflemek için buraya dokun</span></button><button class="fallback" id="touch">Pastaya dokun</button><p class="status" id="status" role="status" aria-live="polite">Sesin kaydedilmez, yalnızca üflemeni algılamak için kullanılır.</p></div>
+      <article class="letter" id="letter" hidden><div class="envelope-stage"><div class="envelope-back" aria-hidden="true"></div><div class="envelope-flap" aria-hidden="true"></div><div class="card-pocket"><div class="message-card"><p class="eyebrow">SANA BİR NOT VAR</p><p id="message"></p><p class="signature" id="signature"></p></div></div><div class="envelope-front" aria-hidden="true"><span>♡</span></div></div><button class="fallback" id="replay">Bir dilek daha tut ↺</button></article>
+    </section>
+    <footer><span>BİR DİLEK, BİR YENİ YAŞ.</span><span>sevgiyle yapıldı ♡</span></footer>
+  </main>
+  <dialog id="editor"><form id="form"><button type="button" class="close" id="close" aria-label="Kapat">×</button><p class="eyebrow">BİRİNİN GÜNÜNÜ GÜZELLEŞTİR</p><h2>Küçük bir hediye hazırla.</h2><label>Doğum günü çocuğunun adı<input name="name" maxlength="40" placeholder="İsim girin"></label><label>İçinden geçenler<textarea name="message" maxlength="1200" rows="4" required>Yeni yaşın sana güzel tesadüfler, bol kahkaha ve hep hatırlamak isteyeceğin anlar getirsin. İyi ki bu dünyadasın, iyi ki hayatımdasın.</textarea></label><label>Kimden?<input name="from" maxlength="60" placeholder="Seni çok seven arkadaşın"></label><button class="primary" type="submit">Hediye linkini oluştur <span>↗</span></button><div id="link-area" hidden><label>Paylaşmaya hazır<input id="gift-link" readonly></label><button type="button" class="fallback" id="copy">Linki kopyala</button></div><p class="editor-note" id="editor-status" role="status">Mesajın linkte sıkıştırılmış kod olarak saklanır. Linki alan kişi mesajı açabilir.</p></form></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
+
